@@ -1,4 +1,13 @@
-### Hi there 👋
+### Hullo
+
+My name is drifty and I am a law student who works on sysadmin stuff on the side.
+
+I run a website here : - <a href="https://home.003274.xyz">3274</a>
+
+You can contribute in running this website and related services here : - (every small bit counts)
+
+<noscript><a href="https://liberapay.com/driftywinds/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
+
 
 <!--
 **driftywinds/driftywinds** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
