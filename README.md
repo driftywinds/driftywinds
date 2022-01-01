@@ -8,4 +8,4 @@ You can contribute in running this website and related services here : - (even a
 
 <noscript><a href="https://liberapay.com/driftywinds/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript>
 or
-<noscript><a href="https://www.patreon.com/bePatron?u=67102544" data-patreon-widget-type="become-patron-button"><img alt="Patreon" src="https://i.ibb.co/2gR1nTZ/patreon.png"></a></noscript>
+<noscript><a href="https://www.patreon.com/bePatron?u=67102544" data-patreon-widget-type="become-patron-button" target="_blank"><img alt="Patreon" src="https://i.ibb.co/2gR1nTZ/patreon.png"></a></noscript>
