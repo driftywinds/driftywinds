@@ -2,7 +2,7 @@
 
 My name is drifty and I am a law student who works on sysadmin stuff on the side.
 
-I run a website here : - <a href="https://home.003274.xyz">3274</a>
+I run some services and a website here : - <a href="https://home.003274.xyz">3274</a>
 
 You can contribute in running this website and related services here : - (every small bit counts)
 
