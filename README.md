@@ -2,7 +2,7 @@
 
 My name is drifty and I am a law student who works on sysadmin stuff on the side.
 
-I run some services and a website here : - <a href="https://sites.google.com/view/ootecta/home" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
+I run some services and a website here : - <a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
 
 </br>
 
