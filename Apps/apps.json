@@ -1,0 +1,108 @@
+{
+  "apps": [
+    {
+      "beta": false,
+      "bundleIdentifier": "com.google.ios.youtube",
+      "developerName": "Various Developers",
+      "META": { "repoName": "uYouEnhanced (driftywinds)" },
+      "contact": {
+          "web": "https://github.com/driftywinds/uYouEnhanced/releases"
+      },
+      "downloadURL": "https://github.com/driftywinds/uYouEnhanced/releases/download/untagged-6e2eeb1ec35bb9f77bde/uYouPlus_19.09.4-3.0.3.ipa",
+      "iconURL": "https://raw.githubusercontent.com/therealFoxster/AltSource/master/assets/icons/uYou.png",
+      "localizedDescription": "uYou is the best tweak for the YouTube app.\n \n uYouEnhanced is a modified version of uYouPlus & uYou with even more features.\n \n Additional features:\n • Skip sponsorships in videos (iSponsorBlock)\n • Even more PiP options (YouPiP)\n • Unlock 1440p and 2160p resolutions (YTUHD)\n • Disable overlay at the end of videos (YTNoHoverCards)\n • Remove YouTube Premium upsell alerts (NoYTPremium)\n • Enable to Dim the YouTube UI (LowContrastMode)\n • Enable the miniplayer for all videos (YTMiniplayerEnabler)\n • Prevent the notch/Dynamic Island from cutting into 2:1 videos (DontEatMyContent)\n • Configure A/B settings in the YouTube app (YTABConfig)\n • And more\n \n More information: \n https://github.com/qnblackcat/uYouPlus/ \n \n Requires iOS 14.0 or later.\n \n Contributors: MiRO92, qnblackcat, PoomSmart, level3tjg, BandarHelal, galactic, julioverne, HASHBANG, Lyvendia, Foxster, ichitaso, Ahmed Bafkir, CokePokes, Tommy Teo, theos, and many others.",
+      "name": "uYouEnhanced (driftywinds)",
+      "screenshotURLs": [
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus1.jpeg?raw=true",
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus2.jpeg?raw=true",
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus3.jpeg?raw=true",
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus4.jpeg?raw=true",
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus5.jpeg?raw=true",
+        "https://github.com/therealFoxster/AltSource/blob/master/assets/screenshots/uYouPlus/uyouplus6.jpeg?raw=true"
+      ],
+      "size": 130097628,
+      "appPermissions": {
+        "entitlements": [
+            {
+              "name": "com.apple.security.application-groups"
+            },
+            {
+              "name": "com.apple.developer.associated-domains"
+            },
+            {
+              "name": "com.apple.developer.coremedia.allow-alternate-video-decoder-selection"
+            },
+            {
+              "name": "com.apple.developer.usernotifications.time-sensitive"
+            },
+            {
+              "name": "get-task-allow"
+            },
+            {
+              "name": "com.apple.developer.device-information.user-assigned-device-name"
+            },
+            {
+              "name": "com.apple.developer.group-session"
+            },
+            {
+              "name": "keychain-access-groups"
+            },
+            {
+              "name": "com.apple.developer.networking.multicast"
+            },
+            {
+              "name": "aps-environment"
+            },
+            {
+              "name": "com.apple.developer.networking.wifi-info"
+            }
+          ],
+          "privacy": [
+            {
+              "name": "AppleMusic",
+              "usageDescription": "This lets you add your own audio files to your videos."
+            },
+            {
+              "name": "BluetoothPeripheral",
+              "usageDescription": "YouTube needs bluetooth access to scan for nearby Cast devices."
+            },
+            {
+              "name": "Camera",
+              "usageDescription": "This lets you create videos using the app."
+            },
+            {
+              "name": "Contacts",
+              "usageDescription": "Your contacts will be sent to YouTube servers to help you find friends to share videos with."
+            },
+            {
+              "name": "LocalNetwork",
+              "usageDescription": "Access to your network allows YouTube to discover and connect to devices such as your TV."
+            },
+            {
+              "name": "LocationWhenInUse",
+              "usageDescription": "Makes it easier for you to attach location information to your videos and live streams and allows for features such as improved recommendations and ads."
+            },
+            {
+              "name": "Microphone",
+              "usageDescription": "This lets you include audio with your videos and search using your voice."
+            },
+            {
+              "name": "PhotoLibrary",
+              "usageDescription": "This lets you upload media you've already created."
+            }
+          ]
+        },
+      "subtitle": "The best tweak for the YouTube app just got even better",
+      "tintColor": "e81e8a",
+      "version": "19.09.4",
+      "versionDate": "2024-03-08",
+      "versionDescription": "• Updated YouTube to 19.09.4\n • uYou is using 3.0.3\n • Fixed Hide Collapse Button Option\n • Updated Hide Thanks Button Option\n • Updated uYouPlus Extras Menu Icon!"
+    }
+  ],
+  "identifier": "com.uyouenhanceddw.source",
+  "name": "uYouEnhanced (driftywinds) Source",
+  "sourceURL": "https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps.json",
+  "website": "https://github.com/driftywinds/uYouEnhanced",
+  "news": [],
+  "userInfo": {}
+}
