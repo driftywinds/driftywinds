@@ -103,6 +103,16 @@
   "name": "uYouEnhanced (driftywinds)",
   "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
   "website": "https://github.com/driftywinds/uYouEnhanced",
-  "news": [],
+  "news": [
+    {
+      "appID": "com.google.ios.youtube",
+      "caption": "uYouEnhanced updated to 19.10.7",
+      "date": "2024-03-23",
+      "identifier": "reddit-now-available",
+      "imageURL": "https://level3tjg.me/repo/depictions/com.level3tjg.redditfilter/screenshots/2.PNG",
+      "notify": false,
+      "tintColor": "02c2a8",
+      "title": "New Update - 23rd March 2024"
+    }
   "userInfo": {}
 }
