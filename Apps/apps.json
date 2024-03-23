@@ -8,7 +8,7 @@
       "contact": {
           "web": "https://github.com/driftywinds/uYouEnhanced/releases"
       },
-      "downloadURL": "https://files.catbox.moe/5omrn5.ipa",
+      "downloadURL": "https://files.catbox.moe/e2ql49.ipa",
       "iconURL": "https://raw.githubusercontent.com/driftywinds/driftywinds/main/Apps/dp.png",
       "localizedDescription": "uYou is the best tweak for the YouTube app.\n \n uYouEnhanced is a modified version of uYouPlus & uYou with even more features.\n \n Additional features:\n • Skip sponsorships in videos (iSponsorBlock)\n • Even more PiP options (YouPiP)\n • Unlock 1440p and 2160p resolutions (YTUHD)\n • Disable overlay at the end of videos (YTNoHoverCards)\n • Remove YouTube Premium upsell alerts (NoYTPremium)\n • Enable to Dim the YouTube UI (LowContrastMode)\n • Enable the miniplayer for all videos (YTMiniplayerEnabler)\n • Prevent the notch/Dynamic Island from cutting into 2:1 videos (DontEatMyContent)\n • Configure A/B settings in the YouTube app (YTABConfig)\n • And more\n \n More information: \n https://github.com/qnblackcat/uYouPlus/ \n \n Requires iOS 14.0 or later.\n \n Contributors: MiRO92, qnblackcat, PoomSmart, level3tjg, BandarHelal, galactic, julioverne, HASHBANG, Lyvendia, Foxster, ichitaso, Ahmed Bafkir, CokePokes, Tommy Teo, theos, and many others.",
       "name": "uYouEnhanced (driftywinds)",
@@ -94,14 +94,14 @@
         },
       "subtitle": "No DMCA can stop this ;)",
       "tintColor": "02c2a8",
-      "version": "19.10.5",
-      "versionDate": "2024-03-13",
-      "versionDescription": "• Updated YouTube to 19.10.5\n • uYou is using 3.0.3\n • Fixed Hide Fullscreen Button\n • Updated YTSpeed Tweak with 6.0x speed options!"
+      "version": "19.10.7",
+      "versionDate": "2024-03-23",
+      "versionDescription": "• Updated YouTube to 19.10.7\n • uYou is using 3.0.3\n • Fixed Adblock in uYou Settings\n • fixed iSponsorBlock crashing problem!"
     }
   ],
   "identifier": "com.uyouenhanceddw.source",
   "name": "uYouEnhanced (driftywinds)",
-  "sourceURL": "https://raw.githubusercontent.com/arichornlover/arichornlover.github.io/main/apps.json",
+  "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
   "website": "https://github.com/driftywinds/uYouEnhanced",
   "news": [],
   "userInfo": {}
