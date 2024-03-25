@@ -97,6 +97,27 @@
       "version": "19.12.3",
       "versionDate": "2024-03-25",
       "versionDescription": "• Updated YouTube to 19.12.3\n • uYou is using 3.0.3\n • Fixed Adblock in uYou Settings\n • fixed iSponsorBlock crashing problem!"
+    },
+    {
+      "beta": false,
+      "bundleIdentifier": "com.burbn.instagram",
+      "developerName": "zxcvbn",
+      "downloadURL": "https://files.catbox.moe/4ryvmy.ipa",
+      "iconURL": "https://raw.githubusercontent.com/qnblackcat/AltStore/main/ScreenShot/800px-Instagram_logo_2016.svg.png",
+      "localizedDescription": "This app has options for which tweks to use.\n\nLearn how to make your own Rocket for Instagram iPA here: https://github.com/qnblackcat/IGSideloadFix\n\nFEATURES\n- Browse home feed in grid layout.\n- Show following status in Profile.\n- Download posts from your feed.\n- Repost any post from your feed.\n- Long press on posts to zoom.\n- Copy post captions from your feed.\n- Download all Stories on Instagram.\n- Save videos from IGTV.\n- View Stories without notifying others.\n- Mute and unmute Stories.\n- Disable Auto-Advance in Stories.\n- Hide Stories from your feed.\n- Play in high quality on Mobile Data.\n- Long press on profile photo to zoom.\n- Disable read receipts in DM.\n- Disable Screenshot notifications in DM.\n- Disable Read Receipts in DM.\n\nLearn how to make your own Rocket for Instagram iPA here: https://github.com/qnblackcat/IGSideloadFix",
+      "name": "zxcvbn's InstaMulti",
+      "screenshotURLs": [
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot1.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot2.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot3.jpg",
+        "https://apt.alfhaily.me/cdn/assets/rocket-screenshot4.jpg"
+      ],
+      "size": 91750400,
+      "subtitle": "Save posts and view stories anonymously and do much more. Requires iOS 15 and later.",
+      "tintColor": "c72a96",
+      "version": "324.0.0",
+      "versionDate": "2024-03-25",
+      "versionDescription": "- updated insta (https://apps.apple.com/app/id389801252) to v324.0.0:\n- instagram lol\n- info: https://telegra.ph/zxcvbn-tweaked-instamulti-03-23"
     }
   ],
   "identifier": "com.uyouenhanceddw.source",
@@ -112,6 +133,16 @@
       "imageURL": "https://i.ibb.co/q7hZzg3/Screenshot-2024-03-23-121051.png",
       "notify": true,
       "tintColor": "02c2a8",
+      "title": "New Update - 25th March 2024"
+    },
+    {
+      "appID": "com.burbn.instagram",
+      "caption": "zxcvbn's InstaMulti updated to 324.0.0",
+      "date": "2024-03-25",
+      "identifier": "new-update",
+      "imageURL": "https://i.ibb.co/RvQDjTM/Screenshot-2024-03-25-235711.png",
+      "notify": true,
+      "tintColor": "c72a96",
       "title": "New Update - 25th March 2024"
     }
   ],
