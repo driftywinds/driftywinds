@@ -8,7 +8,7 @@
       "contact": {
           "web": "https://github.com/driftywinds/uYouEnhanced/releases"
       },
-      "downloadURL": "https://files.catbox.moe/e2ql49.ipa",
+      "downloadURL": "https://files.catbox.moe/fgxfi5.ipa",
       "iconURL": "https://raw.githubusercontent.com/driftywinds/driftywinds/main/Apps/dp.png",
       "localizedDescription": "uYou is the best tweak for the YouTube app.\n \n uYouEnhanced is a modified version of uYouPlus & uYou with even more features.\n \n Additional features:\n • Skip sponsorships in videos (iSponsorBlock)\n • Even more PiP options (YouPiP)\n • Unlock 1440p and 2160p resolutions (YTUHD)\n • Disable overlay at the end of videos (YTNoHoverCards)\n • Remove YouTube Premium upsell alerts (NoYTPremium)\n • Enable to Dim the YouTube UI (LowContrastMode)\n • Enable the miniplayer for all videos (YTMiniplayerEnabler)\n • Prevent the notch/Dynamic Island from cutting into 2:1 videos (DontEatMyContent)\n • Configure A/B settings in the YouTube app (YTABConfig)\n • And more\n \n More information: \n https://github.com/qnblackcat/uYouPlus/ \n \n Requires iOS 14.0 or later.\n \n Contributors: MiRO92, qnblackcat, PoomSmart, level3tjg, BandarHelal, galactic, julioverne, HASHBANG, Lyvendia, Foxster, ichitaso, Ahmed Bafkir, CokePokes, Tommy Teo, theos, and many others.",
       "name": "uYouEnhanced (driftywinds)",
@@ -94,9 +94,9 @@
         },
       "subtitle": "No DMCA can stop this ;)",
       "tintColor": "02c2a8",
-      "version": "19.10.7",
-      "versionDate": "2024-03-23",
-      "versionDescription": "• Updated YouTube to 19.10.7\n • uYou is using 3.0.3\n • Fixed Adblock in uYou Settings\n • fixed iSponsorBlock crashing problem!"
+      "version": "19.12.3",
+      "versionDate": "2024-03-25",
+      "versionDescription": "• Updated YouTube to 19.12.3\n • uYou is using 3.0.3\n • Fixed Adblock in uYou Settings\n • fixed iSponsorBlock crashing problem!"
     }
   ],
   "identifier": "com.uyouenhanceddw.source",
@@ -106,13 +106,13 @@
   "news": [
     {
       "appID": "com.google.ios.youtube",
-      "caption": "uYouEnhanced updated to 19.10.7",
-      "date": "2024-03-23",
+      "caption": "uYouEnhanced updated to 19.12.3",
+      "date": "2024-03-25",
       "identifier": "new-update",
       "imageURL": "https://i.ibb.co/q7hZzg3/Screenshot-2024-03-23-121051.png",
       "notify": true,
       "tintColor": "02c2a8",
-      "title": "New Update - 23rd March 2024"
+      "title": "New Update - 25th March 2024"
     }
   ],
   "userInfo": {}
