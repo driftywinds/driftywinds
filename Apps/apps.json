@@ -4,9 +4,9 @@
       "beta": false,
       "bundleIdentifier": "com.google.ios.youtube",
       "developerName": "arichornlover / driftywinds",
-      "META": { "repoName": "uYouEnhanced (driftywinds)" },
+      "META": { "repoName": "driftywinds' AltStore Repo" },
       "contact": {
-          "web": "https://github.com/driftywinds/uYouEnhanced/releases"
+          "web": "https://github.com/driftywinds/"
       },
       "downloadURL": "https://files.catbox.moe/fgxfi5.ipa",
       "iconURL": "https://raw.githubusercontent.com/driftywinds/driftywinds/main/Apps/dp.png",
@@ -121,7 +121,7 @@
     }
   ],
   "identifier": "com.uyouenhanceddw.source",
-  "name": "uYouEnhanced (driftywinds)",
+  "name": "driftywinds' AltStore Repo",
   "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
   "website": "https://github.com/driftywinds/uYouEnhanced",
   "news": [
