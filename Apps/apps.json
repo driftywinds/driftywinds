@@ -124,7 +124,7 @@
   "name": "driftywinds' AltStore Repo",
   "subtitle": "definitevely driftywinds",
   "description": "Latest releases of my releases can be found here.",
-  "iconURL": "https://github.com/driftywinds/driftywinds/blob/main/Apps/dp.png",
+  "iconURL": "https://raw.githubusercontent.com/driftywinds/driftywinds/main/Apps/dp.png",
   "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
   "website": "https://github.com/driftywinds",
   "news": [
