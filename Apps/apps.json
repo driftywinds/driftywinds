@@ -122,9 +122,11 @@
   ],
   "identifier": "com.uyouenhanceddw.source",
   "name": "driftywinds' AltStore Repo",
-  "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
-  "website": "https://github.com/driftywinds/uYouEnhanced",
+  "subtitle": "definitevely driftywinds",
+  "description": "Latest releases of my releases can be found here.",
   "iconURL": "https://github.com/driftywinds/driftywinds/blob/main/Apps/dp.png",
+  "sourceURL": "https://github.com/driftywinds/driftywinds/edit/main/Apps/apps.json",
+  "website": "https://github.com/driftywinds",
   "news": [
     {
       "appID": "com.google.ios.youtube",
