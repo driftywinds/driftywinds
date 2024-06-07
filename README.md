@@ -1,6 +1,17 @@
 ### Hullo
 
-My name is drifty and I am a law student who works on sysadmin stuff on the side.
+I am drifty and I create modified YouTube builds.
+
+for Android 
+- [ReVanced or RVX](https://github.com/driftywinds/yt-builds/releases)
+- [YT Music](https://github.com/driftywinds/YTm-builds/)
+  
+for iOS
+- [uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))
+- [YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))
+- [YTMusicUltimate](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic)
+
+I am also a law graduate who works on sysadmin stuff on the side.
 
 I run some services and a website here : - 
 
@@ -8,7 +19,7 @@ I run some services and a website here : -
 
 </br>
 
-You can contribute in running this website and related services here : - (even as low as 0.5 USD or 40 INR would help)
+If you use my builds and want to support me here : - (even as low as 0.5 USD or 40 INR would help)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/driftywinds) <noscript><a href="https://liberapay.com/driftywinds/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript> <noscript><a href="https://www.patreon.com/bePatron?u=67102544" data-patreon-widget-type="become-patron-button" target="_blank"><img alt="Patreon" src="https://i.ibb.co/th46pRP/30-height.png"></a></noscript> 
 
