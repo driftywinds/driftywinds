@@ -1,6 +1,6 @@
 ### Hullo
 
-I am drifty and I create modified YouTube builds.
+I am drifty and I create modified YouTube builds. 
 
 for Android 
 - [ReVanced or RVX](https://github.com/driftywinds/yt-builds/releases)
@@ -18,6 +18,8 @@ I run some services and a website here : -
 <a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
 
 </br>
+
+![](https://komarev.com/ghpvc/?username=driftywinds&label=Views&color=brightgreen)
 
 If you use my builds and want to support me here : - (even as low as 0.5 USD or 40 INR would help)
 
