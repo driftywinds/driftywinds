@@ -19,7 +19,7 @@ I run some services and a website here : -
 
 </br>
 
-![](https://komarev.com/ghpvc/?username=driftywinds&label=Views&color=brightgreen)
+![](https://komarev.com/ghpvc/?username=driftywinds&label=Page+Views&color=brightgreen&style=for-the-badge)
 
 If you use my builds and want to support me here : - (even as low as 0.5 USD or 40 INR would help)
 
