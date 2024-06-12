@@ -21,7 +21,7 @@ I run some services and a website here : -
 
 ![](https://komarev.com/ghpvc/?username=driftywinds&label=Page+Views&color=brightgreen&style=for-the-badge)
 
-If you use my builds and want to support me here : - (even as low as 0.5 USD or 40 INR would help)
+If you use my builds and want to support me you can check these out : - (even as low as 0.5 USD or 40 INR would help)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/driftywinds) <noscript><a href="https://liberapay.com/driftywinds/donate" target="_blank"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></noscript> <noscript><a href="https://www.patreon.com/bePatron?u=67102544" data-patreon-widget-type="become-patron-button" target="_blank"><img alt="Patreon" src="https://i.ibb.co/th46pRP/30-height.png"></a></noscript> 
 
