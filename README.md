@@ -13,9 +13,11 @@ for iOS
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
-I run some services and a website here : - 
+Everything you need to know about me: - 
 
 <a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
+
+[My Docs](https://docs.drifty.win)
 
 </br>
 
