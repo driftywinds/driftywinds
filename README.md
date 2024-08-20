@@ -7,9 +7,9 @@ for Android
 - [YT Music](https://github.com/driftywinds/YTm-builds/)
   
 for iOS
-- [uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))
 - [YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))
 - [YTMusicUltimate](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic)
+- ~~[uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))~~ (Support discontinued)
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
