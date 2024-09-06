@@ -37,4 +37,6 @@ https://upi.drifty.win/ (for Indians)
   <img src="https://stats.drifty.win/api?username=driftywinds&show_icons=true&count_private=true&theme=omni&include_all_commits=true" />
 </div>
 
+![](https://gamer2810.github.io/steam-miniprofile/?interactive=true&accountId=437560357)
+
 ![](https://hit.yhype.me/github/profile?user_id=63164617)
