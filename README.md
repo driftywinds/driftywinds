@@ -33,4 +33,8 @@ or
 
 https://upi.drifty.win/ (for Indians)
 
+<div align="left">
+  <img src="https://stats.drifty.win/api?username=driftywinds&show_icons=true&count_private=true&theme=omni&include_all_commits=true" />
+</div>
+
 ![](https://hit.yhype.me/github/profile?user_id=63164617)
