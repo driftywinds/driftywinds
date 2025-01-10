@@ -5,7 +5,7 @@ I am drifty and I create modified YouTube builds and other stuff.
 for Android 
 - [ReVanced or RVX](https://003274.xyz/yt)
 - [YT Music](https://003274.xyz/ytm)
-- [MiXplorer Releases](https://github.com/driftywinds/mixplorer-releases)
+- [MiXplorer Releases](https://003274.xyz/mix)
   
 for iOS
 - [My AltStore repo](https://003274.xyz/altstore) (this has everything listed below)
