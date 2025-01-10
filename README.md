@@ -3,11 +3,12 @@
 I am drifty and I create modified YouTube builds and other stuff.
 
 for Android 
-- [ReVanced or RVX](https://github.com/driftywinds/yt-builds/releases)
-- [YT Music](https://github.com/driftywinds/YTm-builds/)
+- [ReVanced or RVX](https://003274.xyz/yt)
+- [YT Music](https://003274.xyz/ytm)
 - [MiXplorer Releases](https://github.com/driftywinds/mixplorer-releases)
   
 for iOS
+- [My AltStore repo](https://003274.xyz/altstore) (this has everything listed below)
 - [YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))
 - [YTMusicUltimate](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic)
 - ~~[uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))~~ (Support discontinued)
