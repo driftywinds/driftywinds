@@ -1,0 +1,15 @@
+# docker-compose.yaml
+version: "3.7"
+
+services:
+  fourget:
+    image: driftywinds/4get:latest
+    restart: unless-stopped
+    environment:
+      - FOURGET_PROTO=http
+      - FOURGET_SERVER_NAME=example name of server
+
+    ports:
+      - "80:80"
+#external caddy auto handles SSL certs
+#this is for arm64 ONLY
