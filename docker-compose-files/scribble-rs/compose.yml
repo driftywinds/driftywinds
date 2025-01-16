@@ -1,0 +1,10 @@
+version: "2.4"
+services:
+    scribble.rs:
+        pull_policy: always
+#        environment:
+#            - PORT=3014
+        ports:
+            - 8080:8080
+        image: biosmarcel/scribble.rs:latest
+        restart: unless-stopped
