@@ -1,0 +1,178 @@
+pages:
+  - name: Calendar
+    width: slim
+    hide-desktop-navigation: true
+    center-vertically: true
+    columns:
+      - size: full
+        widgets:
+          - type: search
+            search-engine: google
+            autofocus: true
+            bangs:
+              - title: YouTube
+                shortcut: "!yt"
+                url: https://www.youtube.com/results?search_query={QUERY}
+
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Asia/Kolkata
+                label: Kolkata
+              - timezone: Europe/Moscow
+                label: Moscow
+              - timezone: Europe/Paris
+                label: Paris
+              - timezone: America/New_York
+                label: New York
+
+          - type: calendar
+
+          - type: iframe
+            title: Month Progress
+            source: https://progress.003274.xyz/month
+            height: 100
+
+
+          - type: iframe
+            title: Year Progress
+            source: https://progress.003274.xyz/year
+            height: 100
+
+          - type: weather
+            location: Chandigarh, India
+
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          - type: clock
+            hour-format: 24h
+            timezones:
+              - timezone: Asia/Kolkata
+                label: Kolkata
+              - timezone: Europe/Moscow
+                label: Moscow
+              - timezone: Europe/Paris
+                label: Paris
+              - timezone: America/New_York
+                label: New York
+
+          - type: calendar
+
+          - type: iframe
+            title: Month Progress
+            source: https://progress.003274.xyz/month
+            height: 100
+
+
+          - type: iframe
+            title: Year Progress
+            source: https://progress.003274.xyz/year
+            height: 100
+
+          - type: weather
+            location: Mumbai, India
+
+      - size: full
+        widgets:
+          - type: search
+            search-engine: google
+            new-tab: true
+            autofocus: true
+            bangs:
+              - title: YouTube
+                shortcut: "!yt"
+                url: https://www.youtube.com/results?search_query={QUERY}
+
+          - type: group
+            widgets:
+              - type: reddit
+                subreddit: anime_titties
+                sort-by: new
+                show-thumbnails: true
+              - type: reddit
+                subreddit: gamingnews
+                sort-by: new
+                show-thumbnails: true
+              - type: reddit
+                subreddit: selfhosted
+                show-thumbnails: true
+
+          - type: videos
+            channels:
+              - UCEcrRXW3oEYfUctetZTAWLw
+              - UCSpFnDQr88xCZ80N-X7t0nQ
+
+          - type: hacker-news
+
+      - size: small
+        widgets:
+          - type: rss
+            limit: 10
+            collapse-after: 4
+            cache: 3h
+            feeds:
+              - url: https://selfh.st/rss/
+                title: This Week in Self-Hosted
+              - url: https://samwho.dev/rss.xml
+              - url: https://awesomekling.github.io/feed.xml
+
+          - type: releases
+            show-source-icon: true
+            repositories:
+              - immich-app/immich
+              - dani-garcia/vaultwarden
+              - inotia00/revanced-patches
+              - Floorp-Projects/Floorp
+              - futo-org/android-keyboard
+              - driftywinds/YT-builds
+              - glanceapp/glance
+              - dockerhub:vaultwarden/server
+              - dockerhub:luuul/4get
+
+          - type: dns-stats
+            service: adguard
+            url: https://agh.example.com/
+            username: admin
+            password: admin
+
+          - type: twitch-channels
+            channels:
+              - zy0xxx
+              - pewdiepie
+              - stanz
+              - atrioc
+
+  - name: Hash Tools
+    columns:
+      - size: full
+        widgets:
+          - type: iframe
+            title: Hash Tools
+            source: https://it-tools.tech/
+            height: 610
+
+  - name: File Encryption
+    columns:
+      - size: full
+        widgets:
+          - type: iframe
+            title: Encrypt
+            source: https://hat.sh
+            height: 610
+          - type: iframe
+            title: Generate Private/Public Keys
+            source: https://hat.sh/generate-keys
+            height: 610
+
+  - name: Ad-block Test
+    columns:
+      - size: full
+        widgets:
+          - type: iframe
+            title: The Test
+            source: https://driftywinds.github.io/toolz/adblock
+            height: 610
+
+
