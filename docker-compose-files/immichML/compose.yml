@@ -1,0 +1,20 @@
+name: immich_remote_ml
+
+services:
+  immich-machine-learning:
+    container_name: immich_machine_learning
+    # For hardware acceleration, add one of -[armnn, cuda, openvino] to the image tag.
+    # Example tag: ${IMMICH_VERSION:-release}-cuda
+    image: ghcr.io/immich-app/immich-machine-learning:${IMMICH_VERSION:-release}
+    # extends:
+    #   file: hwaccel.ml.yml
+    #   service: # set to one of [armnn, cuda, openvino, openvino-wsl] for accelerated inference - use the `-wsl` version for WSL2 where applicab>
+    volumes:
+      - model-cache:/cache
+    restart: always
+    ports:
+      - 3003:3003
+
+volumes:
+  model-cache:
+# port forward 3003 and run this on a beefy machine to use machine learning on any instance of immich remotely
