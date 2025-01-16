@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+    docker-controller-bot:
+        environment:
+            - TELEGRAM_TOKEN=BOT_TOKEN_FROM_BOTFATHER
+            - TELEGRAM_ADMIN=UID_OF_YOUR_TELEGRAM_ACC
+            - CONTAINER_NAME=docker-controller-bot
+            - TZ=Asia/Kolkata
+            #- TELEGRAM_GROUP=
+            #- TELEGRAM_THREAD=1
+            #- TELEGRAM_NOTIFICATION_CHANNEL=
+            #- CHECK_UPDATES=1
+            #- CHECK_UPDATE_EVERY_HOURS=4
+            #- BUTTON_COLUMNS=2
+            - LANGUAGE=EN
+            #- EXTENDED_MESSAGES=0
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock # NO CAMBIAR
+            - ./schedule:/app/schedule # CAMBIAR LA PARTE IZQUIERDA
+        image: dgongut/docker-controller-bot:latest
+        container_name: docker-controller-bot
+        restart: always
+        network_mode: host
+        tty: true
