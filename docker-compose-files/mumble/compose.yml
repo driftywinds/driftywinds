@@ -1,0 +1,24 @@
+services:
+    mumble-server:
+        image: mumblevoip/mumble-server:latest
+        container_name: mumble-server
+        hostname: mumble-server
+        volumes:
+            - ./data:/data
+        restart: on-failure
+        ports:
+            - 64738:64738
+            - 64738:64738/udp
+        environment:
+#            MUMBLE_CONFIG_SERVER_PASSWORD: "SOME_PASSWORD"
+            MUMBLE_CONFIG_registerNAME: "the name of the server"
+            MUMBLE_CONFIG_registerPassword: "A_SECURE_PASSWORD"
+            MUMBLE_CONFIG_registerUrl: "https://your-website.com"
+            MUMBLE_CONFIG_registerLocation: "IN"
+            MUMBLE_CONFIG_USERS: "3"
+            MUMBLE_CONFIG_UNAME: "ubuntu"
+            MUMBLE_CONFIG_WELCOME_TEXT: "Welcome to example's Mumble server!"
+            MUMBLE_CONFIG_defaultchannel: "1"
+#       expose:
+#           - 6502
+# port forward 64738 from your machine
