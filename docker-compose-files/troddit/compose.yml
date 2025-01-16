@@ -1,0 +1,15 @@
+services:
+    troddit:
+        container_name: troddit
+        restart: unless-stopped
+        ports:
+            - 3018:3000
+        image: bsyed/troddit
+        environment:
+            - CLIENT_ID=YOUR_REDDIT_APP_API_CLIENT_ID
+            - CLIENT_SECRET=YOUR_REDDIT_APP_API_CLIENT_SECRET
+            - REDDIT_REDIRECT=https://troddit.example.com/api/auth/callback/reddit
+            - NEXTAUTH_SECRET=YOUR_NEXTAUTH_SECRET
+            - NEXTAUTH_URL=https://troddit.example.com
+            - SIGNING_PRIVATE_KEY=YOUR_SIGNING_PRIVATE_KEY
+# external caddy handles SSl certs
