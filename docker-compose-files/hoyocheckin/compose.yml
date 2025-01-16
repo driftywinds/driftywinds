@@ -1,0 +1,15 @@
+version: '3'
+services:
+  hoyolab_bot:
+    container_name: hoyolab_bot
+    image: driftywinds/hoyocheckin:latest
+#    build:
+#      context: .
+#      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./app:/usr/src/app
+      - /usr/src/app/node_modules
+      - ./data:/app/data
+    command: sh -c "npm install && npm run build && node dist/bot.js"
