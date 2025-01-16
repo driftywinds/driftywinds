@@ -1,0 +1,20 @@
+---
+services:
+  calibre-web-automated:
+    image: crocodilestick/calibre-web-automated:latest
+    container_name: cwa
+    environment:
+      - PUID=1000
+      - PGID=100
+      - TZ=UTC
+      - DOCKER_MODS=linuxserver/mods:universal-calibre
+    volumes:
+      - ./config:/config
+      - ./ingest:/cwa-book-ingest
+      - ./library:/calibre-library
+      #- /path/to/where/you/keep/your/books:/books #Optional
+      #- /path/to/your/gmail/credentials.json:/app/calibre-web/gmail.json #Optional
+    ports:
+      - 8083:8083 # Change the first number to change the port you want to access the Web UI, not the second
+    restart: unless-stopped
+# external caddy handles SSL certs
