@@ -1,0 +1,17 @@
+services:
+  pocket-id:
+    image: stonith404/pocket-id  # or ghcr.io/stonith404/pocket-id
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - 80:80
+    volumes:
+      - "./data:/app/backend/data"
+    # Optional healthcheck
+    healthcheck:
+      test: "curl -f http://localhost/health"
+      interval: 1m30s
+      timeout: 5s
+      retries: 2
+      start_period: 10s
+# external caddy handles SSL certs
