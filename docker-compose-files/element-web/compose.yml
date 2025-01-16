@@ -1,0 +1,7 @@
+services:
+    element-web:
+        ports:
+            - 80:80
+        volumes:
+            - ./config.json:/app/config.json
+        image: vectorim/element-web
