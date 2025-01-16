@@ -1,0 +1,13 @@
+services:
+    server:
+        container_name: vaultwarden
+        volumes:
+            - ./vaultwarden:/data/
+            - /etc/localtime:/etc/localtime:ro
+        restart: unless-stopped
+        ports:
+            - 80:80
+        image: vaultwarden/server:latest
+#        environment:
+#            - ADMIN_TOKEN="SECURE_PASSWORD_HERE"
+# external caddy handles SSL certs
