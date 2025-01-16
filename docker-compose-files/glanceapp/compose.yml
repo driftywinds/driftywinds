@@ -1,0 +1,19 @@
+services:
+  glance:
+    image: glanceapp/glance
+    volumes:
+      - ./glance.yml:/app/glance.yml
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+#  glance-docker-container-ext:
+#    image: dvdandroid/glance-docker-container-ext
+#    container_name: glance-docker-container-ext
+#    restart: unless-stopped
+#    environment:
+#      - DOCKER_HOST=unix:///var/run/docker.sock
+#      - PORT=48081 # Optional, default is 8081
+#    volumes:
+#      - /var/run/docker.sock:/var/run/docker.sock
