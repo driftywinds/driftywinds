@@ -17,9 +17,12 @@ I am also a law graduate who works on sysadmin stuff on the side.
 
 Everything you need to know about me: - 
 
+[My Docs](https://docs.drifty.win)
+
+I also work on -
+
 <a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
 
-[My Docs](https://docs.drifty.win)
 
 </br>
 
