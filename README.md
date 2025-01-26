@@ -1,6 +1,6 @@
 ### Hullo
 
-I am drifty and I create modified YouTube builds and other stuff.
+I am drifty, I create modified YouTube builds and other stuff.
 
 for Android 
 - [ReVanced or RVX](https://003274.xyz/yt)
