@@ -9,9 +9,10 @@ for Android
   
 for iOS
 - [My AltStore repo](https://003274.xyz/altstore) (this has everything listed below)
-- [YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))
-- [YTMusicUltimate](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic)
-- ~~[uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))~~ (Support discontinued)
+- [YTLite](https://view.drifty.win/view/app/?source=https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/YTLite))
+- [YTMusicUltimate](https://view.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic) 
+- ~~[YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))~~ (Not using YTLP anymore)
+- ~~[uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))~~ (Not using UYE anymore)
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
@@ -22,7 +23,6 @@ Everything you need to know about me: -
 I also work on -
 
 <a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
-
 
 </br>
 
