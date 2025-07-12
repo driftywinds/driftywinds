@@ -2,9 +2,12 @@
 
 I am drifty, I create modified YouTube builds and other stuff.
 
+Everything I upload can also be found in [this Telegram Group](https://003274.xyz/megalomania) as well as all other links mentioned below. This group is a one stop shop for everything drifty (android/ios both).
+
 for Android 
 - [ReVanced or RVX](https://003274.xyz/yt)
 - [YT Music](https://003274.xyz/ytm)
+- [Spotify Revanced](https://003274.xyz/spotify)
 - [MiXplorer Releases](https://003274.xyz/mix)
   
 for iOS
@@ -16,9 +19,9 @@ for iOS
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
-Everything you need to know about me: - 
+Every service/website I host on the internet: - 
 
-[My Docs](https://docs.drifty.win)
+[My Docs](https://docs.drifty.win/services/misc)
 
 I also work on -
 
