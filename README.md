@@ -19,13 +19,9 @@ for iOS
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
-Every service/website I host on the internet: - 
+Every service/website I host on the internet: - [docs.drifty.win](https://003274.xyz/services)
 
-[docs.drifty.win](https://003274.xyz/services)
-
-I also work on -
-
-<a href="https://www.003274.xyz/" target="_blank"><img alt= "3274" src="https://i.ibb.co/3TfCh7r/small.png"></a>
+I also work on -  [The 3274 Project](https://www.003274.xyz/) (not very fleshed out yet)
 
 </br>
 
