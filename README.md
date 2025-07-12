@@ -21,7 +21,7 @@ I am also a law graduate who works on sysadmin stuff on the side.
 
 Every service/website I host on the internet: - 
 
-[My Docs](https://docs.drifty.win/services/misc)
+[docs.drifty.win](https://003274.xyz/services)
 
 I also work on -
 
