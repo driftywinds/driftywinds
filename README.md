@@ -13,9 +13,17 @@ for Android
 for iOS
 - [My AltStore repo](https://003274.xyz/altstore) (this has everything listed below)
 - [YTLite](https://view.drifty.win/view/app/?source=https://raw.githubusercontent.com/driftywinds/driftywinds.github.io/master/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/YTLite))
-- [YTMusicUltimate](https://view.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic) 
+- [YTMusicUltimate](https://view.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubemusic)
+- [BHX Twitter](https://github.com/driftywinds/BHX/releases)
 - ~~[YTLitePlus](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtubeytlp) ([repo](https://github.com/driftywinds/YTLitePlus/))~~ (Not using YTLP anymore)
 - ~~[uYouEnhanced](https://ios.drifty.win/view/app/?source=https://driftywinds.github.io/AltStore/apps.json&id=com.google.ios.youtube) ([repo](https://github.com/driftywinds/uYouEnhanced))~~ (Not using UYE anymore)
+
+Cool projects I have made and use daily: -
+- [Twitchrise Bot](https://t.me/twitchrise_bot) ([repo](https://github.com/driftywinds/twitchrise-bot))
+- [Twitchrise](https://github.com/driftywinds/twitchrise)
+- [RSSrise](https://github.com/driftywinds/rssrise)
+- [Cyan Builder for iOS sideloading](https://github.com/driftywinds/cyan-builder)
+- [Docker Image Builder (using GitHub actions) for multiple platforms](https://github.com/driftywinds/image-builder) (this needs docs, I'll get to them someday)
 
 I am also a law graduate who works on sysadmin stuff on the side.
 
