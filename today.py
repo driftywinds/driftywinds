@@ -14,7 +14,6 @@ def simple_request(func_name, query, variables):
     request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
     if request.status_code == 200:
         return request
-    # If it's a 502, we return the request anyway and handle it in the calling function
     if request.status_code == 502:
         return request
     raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
@@ -45,110 +44,122 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None):
     }'''
     variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
+    res = request.json()
     if count_type == 'repos':
-        return request.json()['data']['user']['repositories']['totalCount']
+        return res['data']['user']['repositories']['totalCount']
     elif count_type == 'stars':
-        return stars_counter(request.json()['data']['user']['repositories']['edges'])
+        return stars_counter(res['data']['user']['repositories']['edges'])
 
-def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, deletion_total=0, my_commits=0, cursor=None):
-    query_count('recursive_loc')
-    query = '''
-    query ($repo_name: String!, $owner: String!, $cursor: String) {
-        repository(name: $repo_name, owner: $owner) {
-            defaultBranchRef {
-                target {
-                    ... on Commit {
-                        history(first: 100, after: $cursor) {
-                            totalCount
-                            edges {
-                                node {
-                                    author {
-                                        user {
-                                            id
+def get_loc_for_repo(owner, repo_name):
+    """
+    Non-recursive version of recursive_loc using a while loop to avoid RecursionError.
+    """
+    addition_total = 0
+    deletion_total = 0
+    my_commits = 0
+    cursor = None
+    has_next_page = True
+
+    while has_next_page:
+        query_count('recursive_loc')
+        query = '''
+        query ($repo_name: String!, $owner: String!, $cursor: String) {
+            repository(name: $repo_name, owner: $owner) {
+                defaultBranchRef {
+                    target {
+                        ... on Commit {
+                            history(first: 100, after: $cursor) {
+                                edges {
+                                    node {
+                                        author {
+                                            user { id }
                                         }
+                                        deletions
+                                        additions
                                     }
-                                    deletions
-                                    additions
                                 }
-                            }
-                            pageInfo {
-                                endCursor
-                                hasNextPage
+                                pageInfo {
+                                    endCursor
+                                    hasNextPage
+                                }
                             }
                         }
                     }
                 }
             }
-        }
-    }'''
-    variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
-    
-    if request.status_code == 502:
-        print(f"   ⚠️ Skipping {owner}/{repo_name} due to GitHub API Timeout (502)")
-        return 0, 0, 0 # Return zeros so the script continues
+        }'''
+        variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
+        request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
         
-    if request.status_code == 200:
-        if request.json()['data']['repository']['defaultBranchRef'] != None:
-            return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
-        else: return 0, 0, 0
-    
-    return 0, 0, 0
+        if request.status_code != 200:
+            print(f"   ⚠️ Skipping {owner}/{repo_name} due to API error ({request.status_code})")
+            break
 
-def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
-    for node in history['edges']:
-        if node['node']['author']['user'] == OWNER_ID:
-            my_commits += 1
-            addition_total += node['node']['additions']
-            deletion_total += node['node']['deletions']
+        res = request.json()
+        repo_data = res.get('data', {}).get('repository')
+        if not repo_data or not repo_data.get('defaultBranchRef'):
+            break
 
-    if history['edges'] == [] or not history['pageInfo']['hasNextPage']:
-        return addition_total, deletion_total, my_commits
-    else: 
-        return recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
+        history = repo_data['defaultBranchRef']['target']['history']
+        for node in history['edges']:
+            if node['node']['author']['user'] == OWNER_ID:
+                my_commits += 1
+                addition_total += node['node']['additions']
+                deletion_total += node['node']['deletions']
 
-def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=[]):
-    query_count('loc_query')
-    query = '''
-    query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
-        user(login: $login) {
-            repositories(first: 60, after: $cursor, ownerAffiliations: $owner_affiliation) {
-            edges {
-                node {
-                    ... on Repository {
-                        nameWithOwner
-                        defaultBranchRef {
-                            target {
-                                ... on Commit {
-                                    history {
-                                        totalCount
+        has_next_page = history['pageInfo']['hasNextPage']
+        cursor = history['pageInfo']['endCursor']
+        
+    return addition_total, deletion_total, my_commits
+
+def loc_query(owner_affiliation, comment_size=0, force_cache=False):
+    """
+    Non-recursive version of loc_query.
+    """
+    edges = []
+    cursor = None
+    has_next_page = True
+
+    while has_next_page:
+        query_count('loc_query')
+        query = '''
+        query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
+            user(login: $login) {
+                repositories(first: 60, after: $cursor, ownerAffiliations: $owner_affiliation) {
+                edges {
+                    node {
+                        ... on Repository {
+                            nameWithOwner
+                            defaultBranchRef {
+                                target {
+                                    ... on Commit {
+                                        history { totalCount }
                                         }
                                     }
                                 }
                             }
                         }
                     }
-                }
-                pageInfo {
-                    endCursor
-                    hasNextPage
+                    pageInfo {
+                        endCursor
+                        hasNextPage
+                    }
                 }
             }
-        }
-    }'''
-    variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
-    request = simple_request(loc_query.__name__, query, variables)
-    
-    # Handle possible empty data on 502
-    res_json = request.json()
-    if 'data' not in res_json or res_json['data']['user'] is None:
-        return [0, 0, 0, False]
+        }'''
+        variables = {'owner_affiliation': owner_affiliation, 'login': USER_NAME, 'cursor': cursor}
+        request = simple_request('loc_query', query, variables)
+        res_json = request.json()
+        
+        if 'data' not in res_json or res_json['data']['user'] is None:
+            break
+            
+        repo_batch = res_json['data']['user']['repositories']
+        edges += repo_batch['edges']
+        has_next_page = repo_batch['pageInfo']['hasNextPage']
+        cursor = repo_batch['pageInfo']['endCursor']
 
-    if res_json['data']['user']['repositories']['pageInfo']['hasNextPage']:
-        edges += res_json['data']['user']['repositories']['edges']
-        return loc_query(owner_affiliation, comment_size, force_cache, res_json['data']['user']['repositories']['pageInfo']['endCursor'], edges)
-    else:
-        return cache_builder(edges + res_json['data']['user']['repositories']['edges'], comment_size, force_cache)
+    return cache_builder(edges, comment_size, force_cache)
 
 def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     filename = 'cache/'+hashlib.sha256(USER_NAME.encode('utf-8')).hexdigest()+'.txt'
@@ -169,12 +180,13 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     
     for index in range(len(edges)):
         repo_hash, commit_count, *__ = data[index].split()
-        if repo_hash == hashlib.sha256(edges[index]['node']['nameWithOwner'].encode('utf-8')).hexdigest():
+        repo_name_full = edges[index]['node']['nameWithOwner']
+        if repo_hash == hashlib.sha256(repo_name_full.encode('utf-8')).hexdigest():
             if edges[index]['node']['defaultBranchRef'] is not None:
                 new_commit_count = edges[index]['node']['defaultBranchRef']['target']['history']['totalCount']
                 if int(commit_count) != new_commit_count:
-                    owner, repo_name = edges[index]['node']['nameWithOwner'].split('/')
-                    loc = recursive_loc(owner, repo_name, data, cache_comment)
+                    owner, repo_name = repo_name_full.split('/')
+                    loc = get_loc_for_repo(owner, repo_name)
                     data[index] = repo_hash + f' {new_commit_count} {loc[2]} {loc[0]} {loc[1]}\n'
             else:
                 data[index] = repo_hash + ' 0 0 0 0\n'
@@ -190,8 +202,10 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     return [loc_add, loc_del, loc_add - loc_del, True]
 
 def flush_cache(edges, filename, comment_size):
-    with open(filename, 'r') as f:
-        data = f.readlines()[:comment_size]
+    try:
+        with open(filename, 'r') as f:
+            data = f.readlines()[:comment_size]
+    except: data = ['\n']*comment_size
     with open(filename, 'w') as f:
         f.writelines(data)
         for node in edges:
@@ -233,13 +247,13 @@ def commit_counter(comment_size):
 def user_getter(username):
     query_count('user_getter')
     query = 'query($login: String!){ user(login: $login) { id createdAt } }'
-    request = simple_request(user_getter.__name__, query, {'login': username})
+    request = simple_request('user_getter', query, {'login': username})
     return {'id': request.json()['data']['user']['id']}, request.json()['data']['user']['createdAt']
 
 def follower_getter(username):
     query_count('follower_getter')
     query = 'query($login: String!){ user(login: $login) { followers { totalCount } } }'
-    request = simple_request(follower_getter.__name__, query, {'login': username})
+    request = simple_request('follower_getter', query, {'login': username})
     return int(request.json()['data']['user']['followers']['totalCount'])
 
 def query_count(funct_id):
@@ -251,10 +265,10 @@ def perf_counter(funct, *args):
     return funct(*args), time.perf_counter() - start
 
 if __name__ == '__main__':
-    user_data, user_time = perf_counter(user_getter, USER_NAME)
-    OWNER_ID, acc_date = user_data
+    user_data, _ = perf_counter(user_getter, USER_NAME)
+    OWNER_ID, _ = user_data
     
-    total_loc, loc_time = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
+    total_loc, _ = perf_counter(loc_query, ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'], 7)
     commit_data, _ = perf_counter(commit_counter, 7)
     star_data, _ = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
     repo_data, _ = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
