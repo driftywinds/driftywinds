@@ -52,3 +52,7 @@ https://upi.drifty.win/ (for Indians)
 ![](https://gamer2810.github.io/steam-miniprofile/?interactive=true&accountId=437560357)
 
 ![](https://hit.yhype.me/github/profile?user_id=63164617)
+
+
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=sabmohmaya&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=true&profanity=false&bar_color_cover=true&bar_color=53b14f&mode=dark)](https://spotify-github-profile.kittinanx.com/api/view?uid=sabmohmaya&redirect=true)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
